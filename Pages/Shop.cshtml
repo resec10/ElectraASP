@@ -1,0 +1,267 @@
+﻿@page
+@model ElectraASP.Pages.ShopModel
+@{
+    ViewData["CSS"] = "/css/styleBuildPC.css";
+    ViewData["Title"] = "Build your PC";
+    Models.Part p;
+    double total = 0;
+}
+
+<div class="large-text">Build your PC</div>
+    <div class="shop">
+        <div class="build-pc-menu">
+            <div class="pc-headers">
+                <div>
+                    <p>Components</p>
+                </div>
+                <div class="table-header">
+                    <p style="font-weight: bold">Price</p>
+                </div>
+            </div>
+            <div class="pc-table">
+                <div class="item">
+                    <div style="text-decoration: underline;">CPU</div>
+                @{
+                    if (Model.BoughtCPU.First() == null)
+                        {
+                            <a asp-page="/Parts" asp-route-name="@typeof(Models.CPU).Name">
+                                <button type="button" class="add-button">+Add</button>
+                            </a>
+                        }
+                        else
+                        {
+                            p = Model.BoughtCPU.First();
+                            total += p.Price;
+                            <div class="buying-item">
+                                <img src="/@p.ImageLink" width="@(p.ImageWidth/2) px" height="@(p.ImageHeight/2) px">
+                                <div>@p.Name</div>
+                            </div>
+                            <div class="buying-price">
+                                <div class="item-price">$@p.Price</div>
+                                <form method="post" asp-page-handler="Delete">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="id" value="@Model.BoughtCPU.First().ID" />
+                                    <input type="hidden" name="type" value="CPU" />
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
+                            </div>
+
+                        }
+                    }
+                </div>
+                <div class="item">
+                    <div style="text-decoration: underline;">CPU Cooler</div>
+                    @{
+                        @if (Model.BoughtCooler.First() == null)
+                        {
+                            <a asp-page="/Parts" asp-route-name="@typeof(Models.Cooler).Name">
+                                <button type="button" class="add-button">+Add</button>
+                            </a>
+                        }
+                        else
+                        {
+                            p = Model.BoughtCooler.First();
+                            total += p.Price;
+                            <div class="buying-item">
+                                <img src="/@p.ImageLink" width="@(p.ImageWidth/2) px" height="@(p.ImageHeight/2) px">
+                                <div>@p.Name</div>
+                            </div>
+                            <div class="buying-price">
+                                <div class="item-price">$@p.Price</div>
+                            <form method="post" asp-page-handler="Delete">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@Model.BoughtCooler.First().ID" />
+                                <input type="hidden" name="type" value="Cooler" />
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                            </div>
+
+                        }
+                    }
+                </div>
+
+                <div class="item">
+                    <div style="text-decoration: underline;">Motherboard</div>
+                    @{
+                        if (Model.BoughtMotherboard.First() == null)
+                        {
+                            <a asp-page="/Parts" asp-route-name="@typeof(Models.Motherboard).Name">
+                                <button type="button" class="add-button">+Add</button>
+                            </a>
+                        }
+                        else
+                        {
+                            p = Model.BoughtMotherboard.First();
+                        total += p.Price;
+                            <div class="buying-item">
+                                <img src="/@p.ImageLink" width="@(p.ImageWidth/2) px" height="@(p.ImageHeight/2) px">
+                                <div>@p.Name</div>
+                            </div>
+                            <div class="buying-price">
+                                <div class="item-price">$@p.Price</div>
+                            <form method="post" asp-page-handler="Delete">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@Model.BoughtMotherboard.First().ID" />
+                                <input type="hidden" name="type" value="Motherboard" />
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                            </div>
+                        }
+                    }
+                </div>
+                <div class="item">
+                    <div style="text-decoration: underline;">Memory</div>
+                    @{
+                        if (Model.BoughtRAM.First() == null)
+                        {
+                            <a asp-page="/Parts" asp-route-name="@typeof(Models.RAM).Name">
+                                <button type="button" class="add-button">+Add</button>
+                            </a>
+                        }
+                        else
+                        {
+                            p = Model.BoughtRAM.First();
+                        total += p.Price;
+                            <div class="buying-item">
+                                <img src="/@p.ImageLink" width="@(p.ImageWidth/2) px" height="@(p.ImageHeight/2) px">
+                                <div>@p.Name</div>
+                            </div>
+                            <div class="buying-price">
+                                <div class="item-price">$@p.Price</div>
+                            <form method="post" asp-page-handler="Delete">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@Model.BoughtRAM.First().ID" />
+                                <input type="hidden" name="type" value="RAM" />
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                            </div>
+                        }
+                    }
+                </div>
+                <div class="item">
+                    <div style="text-decoration: underline;">Storage</div>
+                    @{
+                        if (Model.BoughtSSD.First() == null) 
+                        {
+                            <a asp-page="/Parts" asp-route-name="@typeof(Models.SSD).Name">
+                                <button type="button" class="add-button">+Add</button>
+                            </a>
+                        }
+                        else
+                        {
+                            p = Model.BoughtSSD.First();
+                        total += p.Price;
+                            <div class="buying-item">
+                                <img src="/@p.ImageLink" width="@(p.ImageWidth/2) px" height="@(p.ImageHeight/2) px">
+                                <div>@p.Name</div>
+                            </div>
+                            <div class="buying-price">
+                                <div class="item-price">$@p.Price</div>
+                            <form method="post" asp-page-handler="Delete">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@Model.BoughtSSD.First().ID" />
+                                <input type="hidden" name="type" value="SSD" />
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                            </div>
+                        }
+                    }
+                </div>
+                <div class="item">
+                    <div style="text-decoration: underline;">Video card</div>
+                    @{
+                        if (Model.BoughtVideoCard.First() == null)
+                        {
+                            <a asp-page="/Parts" asp-route-name="@typeof(Models.VideoCard).Name">
+                                <button type="button" class="add-button">+Add</button>
+                            </a>
+                        }
+                        else
+                        {
+                            p = Model.BoughtVideoCard.First();
+                        total += p.Price;
+                            <div class="buying-item">
+                                <img src="/@p.ImageLink" width="@(p.ImageWidth/2) px" height="@(p.ImageHeight/2) px">
+                                <div>@p.Name</div>
+                            </div>
+                            <div class="buying-price">
+                                <div class="item-price">$@p.Price</div>
+                            <form method="post" asp-page-handler="Delete">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@Model.BoughtVideoCard.First().ID" />
+                                <input type="hidden" name="type" value="VideoCard" />
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                            </div>
+                        }
+                    }
+                </div>
+                <div class="item">
+                    <div style="text-decoration: underline;">Case</div>
+                    @{
+                        if (Model.BoughtCase.First() == null)
+                        {
+                            <a asp-page="/Parts" asp-route-name="@typeof(Models.Case).Name">
+                                <button type="button" class="add-button">+Add</button>
+                            </a>
+                        }
+                        else
+                        {
+                            p = Model.BoughtCase.First();
+                        total += p.Price;
+                            <div class="buying-item">
+                                <img src="/@p.ImageLink" width="@(p.ImageWidth/2) px" height="@(p.ImageHeight/2) px">
+                                <div>@p.Name</div>
+                            </div>
+                            <div class="buying-price">
+                                <div class="item-price">$@p.Price</div>
+                            <form method="post" asp-page-handler="Delete">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@Model.BoughtCase.First().ID" />
+                                <input type="hidden" name="type" value="Case" />
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                            </div>
+                        }
+                    }
+                </div>
+                <div class="item">
+                    <div style="text-decoration: underline;">Power supply</div>
+                    @{
+                        if (Model.BoughtPower.First() == null)
+                        {
+                            <a asp-page="/Parts" asp-route-name="@typeof(Models.Power).Name">
+                                <button type="button" class="add-button">+Add</button>
+                            </a>
+                        }
+                        else
+                        {
+                            p = Model.BoughtPower.First();
+                        total += p.Price;
+                            <div class="buying-item">
+                                <img src="/@p.ImageLink" width="@(p.ImageWidth/2) px" height="@(p.ImageHeight/2) px">
+                                <div>@p.Name</div>
+                            </div>
+                            <div class="buying-price">
+                                <div class="item-price">$@p.Price</div>
+                            <form method="post" asp-page-handler="Delete">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@Model.BoughtPower.First().ID" />
+                                <input type="hidden" name="type" value="Power" />
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="large-text">Total: $@total.ToString("F2")</div> 
+        <form asp-page="/Payment" method="post" asp-page-handler="CreateCheckoutSession">
+        @Html.AntiForgeryToken()
+            <div>
+                <input type="hidden" id="amount" name="amount" value="" />
+            </div>
+            <div class="submit-button"><button type="submit">Checkout</button></div>
+        </form>
+    </div>

@@ -1,0 +1,28 @@
+﻿@page
+@model ElectraASP.Pages.BuildModel
+@{
+    ViewData["Title"] = "View completed builds";
+    ViewData["CSS"] = "/css/completedBuilds.css";
+
+}
+
+<p class="text-title">Available completed builds</p>
+<div class="completed-builds-menu">
+    @for (int i = 0; i < Model.ComputerList.Count; i++)
+    {
+        <a asp-page="/Item" asp-route-id=@Model.ComputerList[i].ID>
+            <div class="completed-builds-card">
+                <img src="/@Model.ComputerList[i].ImageLink"
+                    alt="image of some of the components from the intel gaming/streaming build" width="310px" height="253px"
+                    style="border-radius: 20px;">
+                <div class="card-title">@Model.ComputerList[i].Title</div>
+                <div class="card-subtitle">
+                    <p>@Model.ComputerList[i].Subtitle.Split('\n')[0]</p>
+                    <p>
+                        @Model.ComputerList[i].Subtitle.Split('\n')[1]
+                    </p>
+                </div>
+            </div>
+        </a>
+    }
+</div>

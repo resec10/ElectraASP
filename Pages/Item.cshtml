@@ -1,0 +1,150 @@
+﻿@page "/Item/{id:int}"
+@model ElectraASP.Pages.ItemModel
+@{
+    ViewData["Title"] = Model.computer.Title;
+    ViewData["CSS"] = "/css/View.css";
+    double total=0;
+}
+
+<style></style>
+<p class="text-title">@Model.computer.Title</p>
+<div class="parts-section">
+    <p>Part List</p>
+    <div class="parts-list">
+        @for(int i=0; i<Model.Parts.Count; i++)
+        {
+            <div class="part">
+                <div class="part-img">
+                    <img src="/@Model.Parts[i].ImageLink" alt="image of a part of the computer"
+                         width="@Model.Parts[i].ImageWidth px" height="@Model.Parts[i].ImageHeight px">
+                </div>
+                <p>@Model.Parts[i].Name</p>
+                <div class="price">$@Model.Parts[i].Price</div>
+            </div>
+            total += Model.Parts[i].Price;
+        }
+    </div>
+    <p>Total: $@total.ToString("F2")</p>
+</div>
+<p id="desc">Description</p>
+<div class="specs">
+    @for (int i = 0; i < Model.Parts.Count; i++)
+    {
+        <div>
+            <div class="title">@Model.Parts[i].GetType().Name</div>
+            <div class="subtitle">
+                @Model.Parts[i].Description
+            </div>
+        </div>
+    }
+</div>
+<form asp-page="/Shop" method="post" asp-page-handler="Bundle">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="id" value="@Model.BuyID" />
+    @for (int i = 0; i < Model.Parts.Count; i++)
+    {
+        <input type="hidden" asp-for="@Model.Parts[i].GetType().Name" value="@Model.Parts[i].GetType().Name" />
+    }
+    <div class="buy-button">
+        <button type="submit">Buy</button>
+    </div>
+</form>
+<div class="others">
+    <p id="others-text">Other builds</p>
+    <div class="cards">
+        @if(Model.ComputerList.IndexOf(Model.computer)==0)
+        {
+            <a asp-page="/Item" asp-route-id=@Model.ComputerList[1].ID>
+                <div class="completed-builds-card">
+                    <img src="/@Model.ComputerList[1].ImageLink"
+                         alt="image of some of the components from the intel gaming/streaming build" width="310px" height="253px"
+                         style="border-radius: 20px;">
+                    <div class="card-title">@Model.ComputerList[1].Title</div>
+                    <div class="card-subtitle">
+                        <p>@Model.ComputerList[1].Subtitle.Split('\n')[0]</p>
+                        <p>
+                            @Model.ComputerList[1].Subtitle.Split('\n')[1]
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a asp-page="/Item" asp-route-id=@Model.ComputerList[Model.ComputerList.Count-1].ID>
+                <div class="completed-builds-card">
+                    <img src="/@Model.ComputerList[Model.ComputerList.Count-1].ImageLink"
+                         alt="image of some of the components from the intel gaming/streaming build" width="310px" height="253px"
+                         style="border-radius: 20px;">
+                    <div class="card-title">@Model.ComputerList[Model.ComputerList.Count-1].Title</div>
+                    <div class="card-subtitle">
+                        <p>@Model.ComputerList[Model.ComputerList.Count-1].Subtitle.Split('\n')[0]</p>
+                        <p>
+                            @Model.ComputerList[Model.ComputerList.Count-1].Subtitle.Split('\n')[1]
+                        </p>
+                    </div>
+                </div>
+            </a>
+        } else if(Model.ComputerList.IndexOf(Model.computer)==Model.ComputerList.Count-1)
+        {
+            <a asp-page="/Item" asp-route-id=@Model.ComputerList[0].ID>
+                <div class="completed-builds-card">
+                    <img src="/@Model.ComputerList[0].ImageLink"
+                         alt="image of some of the components from the intel gaming/streaming build" width="310px" height="253px"
+                         style="border-radius: 20px;">
+                    <div class="card-title">@Model.ComputerList[0].Title</div>
+                    <div class="card-subtitle">
+                        <p>@Model.ComputerList[0].Subtitle.Split('\n')[0]</p>
+                        <p>
+                            @Model.ComputerList[0].Subtitle.Split('\n')[1]
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a asp-page="/Item" asp-route-id=@Model.ComputerList[Model.ComputerList.Count-1].ID>
+                <div class="completed-builds-card">
+                    <img src="/@Model.ComputerList[Model.ComputerList.Count-1].ImageLink"
+                         alt="image of some of the components from the intel gaming/streaming build" width="310px" height="253px"
+                         style="border-radius: 20px;">
+                    <div class="card-title">@Model.ComputerList[Model.ComputerList.Count-1].Title</div>
+                    <div class="card-subtitle">
+                        <p>@Model.ComputerList[Model.ComputerList.Count-1].Subtitle.Split('\n')[0]</p>
+                        <p>
+                            @Model.ComputerList[Model.ComputerList.Count-1].Subtitle.Split('\n')[1]
+                        </p>
+                    </div>
+                </div>
+            </a>
+        }
+        else
+        {
+            <a asp-page="/Item" asp-route-id=@Model.ComputerList[Model.ComputerList.IndexOf(Model.computer)+1].ID>
+                <div class="completed-builds-card">
+                    <img src="/@Model.ComputerList[Model.ComputerList.IndexOf(Model.computer)+1].ImageLink"
+                         alt="image of some of the components from the intel gaming/streaming build" width="310px" height="253px"
+                         style="border-radius: 20px;">
+                    <div class="card-title">@Model.ComputerList[Model.ComputerList.IndexOf(Model.computer)+1].Title</div>
+                    <div class="card-subtitle">
+                        <p>@Model.ComputerList[Model.ComputerList.IndexOf(Model.computer)+1].Subtitle.Split('\n')[0]</p>
+                        <p>
+                            @Model.ComputerList[Model.ComputerList.IndexOf(Model.computer)+1].Subtitle.Split('\n')[1]
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a asp-page="/Item" asp-route-id=@Model.ComputerList[Model.ComputerList.IndexOf(Model.computer)-1].ID>
+                <div class="completed-builds-card">
+                    <img src="/@Model.ComputerList[Model.ComputerList.IndexOf(Model.computer)-1].ImageLink"
+                         alt="image of some of the components from the intel gaming/streaming build" width="310px" height="253px"
+                         style="border-radius: 20px;">
+                    <div class="card-title">@Model.ComputerList[Model.ComputerList.IndexOf(Model.computer)-1].Title</div>
+                    <div class="card-subtitle">
+                        <p>@Model.ComputerList[Model.ComputerList.IndexOf(Model.computer)-1].Subtitle.Split('\n')[0]</p>
+                        <p>
+                            @Model.ComputerList[Model.ComputerList.IndexOf(Model.computer)-1].Subtitle.Split('\n')[1]
+                        </p>
+                    </div>
+                </div>
+            </a>
+        }
+    </div>
+</div>
+
+

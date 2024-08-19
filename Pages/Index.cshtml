@@ -1,0 +1,91 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    ViewData["CSS"] = " ";
+    ViewData["JS"] = "/js/index.js";
+}
+<div class="call-to-action">
+    <div class="cta-text">Select. Assemble.</div>
+    <div class="cta-text">Conquer.</div>
+    <div class="cta-underline">
+        We provide part selection, pricing, and compatibility guidance for do-it-yourself
+        computer builders.
+    </div>
+    <div>
+        <a asp-page="/Shop">
+            <button type="button" class="cta-button">
+                <div>
+                    <img src="img/index/key.png" alt="call-to-action button image" width="52px" height="48px">
+                    <div>Start your build now</div>
+                </div>
+            </button>
+        </a>
+    </div>
+</div>
+
+<div id="carouselExample" class="carousel slide carouselPart">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/index/carousel/img1.png" class="d-block w-100" alt="promotional photo nr.1">
+        </div>
+        <div class="carousel-item">
+            <img src="img/index/carousel/img2.png" class="d-block w-100" alt="promotional photo nr.2">
+        </div>
+        <div class="carousel-item">
+            <img src="img/index/carousel/img3.png" class="d-block w-100" alt="promotional photo nr.3">
+        </div>
+        <div class="carousel-item">
+            <img src="img/index/carousel/img4.png" class="d-block w-100" alt="promotional photo nr.4">
+        </div>
+        <div class="carousel-item">
+            <img src="img/index/carousel/img5.png" class="d-block w-100" alt="promotional photo nr.5">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="completed-builds-menu">
+
+    <div class="completed-builds-text">
+        <div class="completed-builds-title">Completed builds</div>
+        <div class="completed-builds-subtitle">
+            Building your own PC and need ideas on where to get started? Explore our
+            builds which cover systems for a variety of use-cases and budgets.
+        </div>
+        <div>
+            <a asp-page="/Build">
+                <button type="button" class="completed-builds-button">
+                    <img src="img/index/CompletedBuilds.png" alt="vector image of a computer" width="58px"
+                        height="48px">
+                    <div>View completed builds</div>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    @for (int i = 3; i < 6; i++)
+    {
+        <a asp-page="/Item" asp-route-id=@Model.ComputerList[i].ID>
+            <div class="completed-builds-card">
+                <img src="/@Model.ComputerList[i].ImageLink"
+                    alt="image of some of the components from the intel gaming/streaming build" width="310px" height="253px"
+                    style="border-radius: 20px;">
+                <div class="card-title">@Model.ComputerList[i].Title</div>
+                <div class="card-subtitle">
+                    <p>@Model.ComputerList[i].Subtitle.Split('\n')[0]</p>
+                    <p>
+                        @Model.ComputerList[i].Subtitle.Split('\n')[1]
+                    </p>
+                </div>
+            </div>
+        </a>
+    }
+</div>

@@ -1,0 +1,493 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\css\\CPU.css",
+      "PackagePath": "staticwebassets\\css\\CPU.css"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\css\\Case.css",
+      "PackagePath": "staticwebassets\\css\\Case.css"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\css\\Cooler.css",
+      "PackagePath": "staticwebassets\\css\\Cooler.css"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\css\\Motherboard.css",
+      "PackagePath": "staticwebassets\\css\\Motherboard.css"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\css\\Power.css",
+      "PackagePath": "staticwebassets\\css\\Power.css"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\css\\RAM.css",
+      "PackagePath": "staticwebassets\\css\\RAM.css"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\css\\SSD.css",
+      "PackagePath": "staticwebassets\\css\\SSD.css"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\css\\VideoCard.css",
+      "PackagePath": "staticwebassets\\css\\VideoCard.css"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\css\\View.css",
+      "PackagePath": "staticwebassets\\css\\View.css"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\css\\aboutUs.css",
+      "PackagePath": "staticwebassets\\css\\aboutUs.css"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\css\\completedBuilds.css",
+      "PackagePath": "staticwebassets\\css\\completedBuilds.css"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\css\\contactUs.css",
+      "PackagePath": "staticwebassets\\css\\contactUs.css"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\css\\styleBuildPC.css",
+      "PackagePath": "staticwebassets\\css\\styleBuildPC.css"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\css\\styleIndex.css",
+      "PackagePath": "staticwebassets\\css\\styleIndex.css"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\icon.png",
+      "PackagePath": "staticwebassets\\icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\1303 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\1303 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\51c+p6RY+AL 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\51c+p6RY+AL 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\51gLnYN1W7L 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\51gLnYN1W7L 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\617EhDDXYfL 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\617EhDDXYfL 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\61fJwCBAX6L 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\61fJwCBAX6L 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\7107JaxG7XL 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\7107JaxG7XL 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\71j6VKsz-fL 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\71j6VKsz-fL 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\71px5ZVL7KL 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\71px5ZVL7KL 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\71vXXYW44HL 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\71vXXYW44HL 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\76557017-16ed-414e-91e1-6404386e44a0 1 (1).png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\76557017-16ed-414e-91e1-6404386e44a0 1 (1).png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\76557017-16ed-414e-91e1-6404386e44a0 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\76557017-16ed-414e-91e1-6404386e44a0 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\AG400-BK-ARGB-(9) 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\AG400-BK-ARGB-(9) 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\AMD-Ryzen-7-7800X3D-(3) 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\AMD-Ryzen-7-7800X3D-(3) 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\LD0001599799_2 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\LD0001599799_2 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\LD0005687233_1 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\LD0005687233_1 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\LD0006014130_0006016756 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\LD0006014130_0006016756 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\TeamGroup-T-Force-Delta-RGB-32GB-16GBx2-DDR5-5200MHz-White-Memory-FF4D532G5200HC40CDC01 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\TeamGroup-T-Force-Delta-RGB-32GB-16GBx2-DDR5-5200MHz-White-Memory-FF4D532G5200HC40CDC01 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\h212blacke_g1-zoom 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\h212blacke_g1-zoom 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\image 10.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\image 10.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\image 11.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\image 11.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\image 12.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\image 12.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\image 13.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\image 13.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\image 14.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\image 14.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\image 15.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\image 15.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\image 16.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\image 16.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\image 17.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\image 17.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\image 18.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\image 18.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\image 19.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\image 19.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\image 20.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\image 20.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\image 21.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\image 21.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\image 22.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\image 22.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\image 23.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\image 23.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\image 24.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\image 24.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\image 25.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\image 25.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\image 26.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\image 26.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\image 27.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\image 27.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\image 28.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\image 28.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\intel_bx8071514900k_core_i9_14900k_24_core_lga_1781469 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\intel_bx8071514900k_core_i9_14900k_24_core_lga_1781469 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\modelblock-gaming-pd 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\modelblock-gaming-pd 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\nzxt_rl_kr240_b1_kraken_240_rgb_240mm_1765798 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\nzxt_rl_kr240_b1_kraken_240_rgb_240mm_1765798 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\buildPC\\xstore 1.png",
+      "PackagePath": "staticwebassets\\img\\buildPC\\xstore 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedBuilds\\image 43.png",
+      "PackagePath": "staticwebassets\\img\\completedBuilds\\image 43.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedBuilds\\image 44.png",
+      "PackagePath": "staticwebassets\\img\\completedBuilds\\image 44.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedBuilds\\image 45.png",
+      "PackagePath": "staticwebassets\\img\\completedBuilds\\image 45.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\ak400.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\ak400.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 23.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 23.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 29.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 29.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 30.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 30.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 31.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 31.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 32.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 32.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 33.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 33.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 34.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 34.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 35.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 35.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 36.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 36.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 38.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 38.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 39.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 39.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 40.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 40.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 41.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 41.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 43.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 43.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 45.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 45.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 46.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 46.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 48.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 48.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 49.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 49.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 50.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 50.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 55.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 55.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 56.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 56.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 58.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 58.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 59.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 59.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 60.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 60.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 65.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 65.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\image 66.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\image 66.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\motherboard.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\motherboard.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\psu.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\psu.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\ram.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\ram.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\completedView\\rtx4070.png",
+      "PackagePath": "staticwebassets\\img\\completedView\\rtx4070.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\CompletedBuilds.png",
+      "PackagePath": "staticwebassets\\img\\index\\CompletedBuilds.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\ProductsIcon.png",
+      "PackagePath": "staticwebassets\\img\\index\\ProductsIcon.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\card-img\\image 37.png",
+      "PackagePath": "staticwebassets\\img\\index\\card-img\\image 37.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\card-img\\image 8.png",
+      "PackagePath": "staticwebassets\\img\\index\\card-img\\image 8.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\card-img\\image 9.png",
+      "PackagePath": "staticwebassets\\img\\index\\card-img\\image 9.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\carousel\\img1.png",
+      "PackagePath": "staticwebassets\\img\\index\\carousel\\img1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\carousel\\img2.png",
+      "PackagePath": "staticwebassets\\img\\index\\carousel\\img2.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\carousel\\img3.png",
+      "PackagePath": "staticwebassets\\img\\index\\carousel\\img3.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\carousel\\img4.png",
+      "PackagePath": "staticwebassets\\img\\index\\carousel\\img4.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\carousel\\img5.png",
+      "PackagePath": "staticwebassets\\img\\index\\carousel\\img5.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\cart.png",
+      "PackagePath": "staticwebassets\\img\\index\\cart.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\case-menu.png",
+      "PackagePath": "staticwebassets\\img\\index\\case-menu.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\cpu-cooler-menu.png",
+      "PackagePath": "staticwebassets\\img\\index\\cpu-cooler-menu.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\cpu-menu-img.png",
+      "PackagePath": "staticwebassets\\img\\index\\cpu-menu-img.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\key.png",
+      "PackagePath": "staticwebassets\\img\\index\\key.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\klipartz 1.png",
+      "PackagePath": "staticwebassets\\img\\index\\klipartz 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\memory-img.png",
+      "PackagePath": "staticwebassets\\img\\index\\memory-img.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\motherboard-menu.png",
+      "PackagePath": "staticwebassets\\img\\index\\motherboard-menu.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\power-supply-menu.png",
+      "PackagePath": "staticwebassets\\img\\index\\power-supply-menu.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\storage-img.png",
+      "PackagePath": "staticwebassets\\img\\index\\storage-img.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\index\\video-card-menu.png",
+      "PackagePath": "staticwebassets\\img\\index\\video-card-menu.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\others\\node-v20.14.0.tar.gz",
+      "PackagePath": "staticwebassets\\img\\others\\node-v20.14.0.tar.gz"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\others\\portrait-of-a-young-businessman-working-on-computer-at-night-in-office-concentration-entrepreneur-using-pc-technology-office-ai-generated-free-photo 1.png",
+      "PackagePath": "staticwebassets\\img\\others\\portrait-of-a-young-businessman-working-on-computer-at-night-in-office-concentration-entrepreneur-using-pc-technology-office-ai-generated-free-photo 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\img\\others\\teamwork-2 1.png",
+      "PackagePath": "staticwebassets\\img\\others\\teamwork-2 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\js\\buildPC.js",
+      "PackagePath": "staticwebassets\\js\\buildPC.js"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\js\\completedBuilds.js",
+      "PackagePath": "staticwebassets\\js\\completedBuilds.js"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Tudor\\Desktop\\ElectraASP\\wwwroot\\js\\parts.js",
+      "PackagePath": "staticwebassets\\js\\parts.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ElectraASP.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ElectraASP.props",
+      "PackagePath": "build\\ElectraASP.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ElectraASP.props",
+      "PackagePath": "buildMultiTargeting\\ElectraASP.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ElectraASP.props",
+      "PackagePath": "buildTransitive\\ElectraASP.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

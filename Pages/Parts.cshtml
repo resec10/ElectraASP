@@ -1,0 +1,427 @@
+﻿@page "/Shop/{name}"
+@model ElectraASP.Pages.PartsModel
+@{
+    ViewData["Title"] = "Build your PC";
+    ViewData["CSS"] = $"/css/{@Model.LinkName}.css";
+    ViewData["JS"] = "/js/parts.js";
+}
+
+<form method="post" action="/Shop">
+    <input type="hidden" name="Type" id="Type" value="">
+    <input type="hidden" name="ItemID" id="ItemID" value="" />
+    @Html.AntiForgeryToken()
+    @if (Model.LinkName == "Case")
+    {
+        <div class="large-text">Choose your Case</div>
+        <div class="pc-headers">
+            <div class="table-header">
+                Name
+            </div>
+            <div class="table-header">
+                Type
+            </div>
+            <div class="table-header">
+                Color
+            </div>
+            <div class="table-header">
+                Power Supply
+            </div>
+            <div class="table-header">
+                Side Panel
+            </div>
+            <div class="table-header" style="font-weight: bolder">
+                Price
+            </div>
+        </div>
+        <div class="cpu-card-list">
+            @foreach (var s in Model.Items)
+            {
+                var p = s as Models.Case;
+                if (string.IsNullOrEmpty(p.Description))
+                {
+                    <div class="cpu-card" onclick="RegisterValue(@p.ID, '@nameof(Models.Case)')">
+                        <div id="text-image">
+                            <img src="/@p.ImageLink" alt="image of a case" width="@p.ImageWidth" height="@p.ImageHeight">
+                            <div class="cpu-text">@p.Name</div>
+                        </div>
+                        <div>@p.Type</div>
+                        <div>@p.Color</div>
+                        <div>@p.PowerSupply</div>
+                        <div>@p.SidePanel</div>
+                        <div>$@p.Price</div>
+                    </div>
+                }
+            }
+        </div>
+    }
+    else if (Model.LinkName == "CPU")
+    {
+        <div class="large-text">Choose your CPU</div>
+        <div class="pc-headers">
+            <div class="table-header">
+                Name
+            </div>
+            <div class="table-header">
+                Core count
+            </div>
+            <div class="table-header">
+                Performance core boost
+            </div>
+            <div class="table-header">
+                Performance boost clock
+            </div>
+            <div class="table-header">
+                TDP
+            </div>
+            <div class="table-header">
+                Integrated graphics
+            </div>
+            <div class="table-header" style="font-weight: bolder">
+                Final price
+            </div>
+        </div>
+        <div class="cpu-card-list">
+            @foreach (var s in Model.Items)
+            {
+                var p = s as Models.CPU;
+                if (string.IsNullOrEmpty(p.Description))
+                {
+                    <div class="cpu-card" onclick="RegisterValue(@p.ID, '@nameof(Models.CPU)')">
+                        <div id="text-image">
+                        <img src="/@p.ImageLink" alt="image of a case" width="@p.ImageWidth" height="@p.ImageHeight">
+                        <div class="cpu-text">@p.Name</div>
+                    </div>
+                    <div>@p.CoreCount</div>
+                    <div>@p.PerformanceCoreBoost GHz</div>
+                    <div>@p.PerformanceBoostClock GHz</div>
+                    <div>@p.TDP W</div>
+                    <div>@p.IntegratedGraphics</div>
+                    <div>$@p.Price</div>
+                </div>
+                }
+            }
+        </div>
+    }
+    else if (Model.LinkName == "Cooler")
+    {
+        <div class="large-text">Choose your CPU Cooler</div>
+        <div class="pc-headers">
+            <div class="table-header">
+                Name
+            </div>
+            <div class="table-header">
+                Fan RPM
+            </div>
+            <div class="table-header">
+                Noise level
+            </div>
+            <div class="table-header">
+                Color
+            </div>
+            <div class="table-header">
+                Radiator size
+            </div>
+            <div class="table-header" style="font-weight: bolder">
+                Final price
+            </div>
+        </div>
+        <div class="cpu-card-list">
+            @foreach (var s in Model.Items)
+            {
+                var p = s as Models.Cooler;
+                if(string.IsNullOrEmpty(p.Description))
+                {
+                <div class="cpu-card" onclick="RegisterValue(@p.ID, '@nameof(Models.Cooler)')">
+                    <div id="text-image">
+                        <img src="/@p.ImageLink" alt="image of a cooler" width="@p.ImageWidth" height="@p.ImageHeight">
+                        <div class="cpu-text">@p.Name</div>
+                    </div>
+                    <div>@p.FanRPM RPM</div>
+                    <div>@p.NoiseLevel dB</div>
+                    <div>@p.Color</div>
+                    @if (@p.RadiatorSize == 0)
+                    {
+                        <div>No radiator</div>
+                    }
+                    else
+                    {
+                        <div>@p.RadiatorSize mm</div>
+                    }
+                    <div>$@p.Price</div>
+                </div>
+                }
+
+            }
+        </div>
+    }
+    else if (Model.LinkName == "Motherboard")
+    {
+        <div class="large-text">Choose your motherboard</div>
+        <div class="pc-headers">
+            <div class="table-header">
+                Name
+            </div>
+            <div class="table-header">
+                Socket/CPU
+            </div>
+            <div class="table-header">
+                Form Factor
+            </div>
+            <div class="table-header">
+                Max Memory
+            </div>
+            <div class="table-header">
+                Memory slots
+            </div>
+            <div class="table-header">
+                Color
+            </div>
+            <div class="table-header" style="font-weight: bolder">
+                Final price
+            </div>
+        </div>
+        <div class="cpu-card-list">
+            @foreach (var s in Model.Items)
+            {
+                var p = s as Models.Motherboard;
+                if (string.IsNullOrEmpty(p.Description))
+                {
+                    <div class="cpu-card" onclick="RegisterValue(@p.ID, '@nameof(Models.Motherboard)')">
+                        <div id="text-image">
+                        <img src="/@p.ImageLink" alt="image of a motherboard" width="@p.ImageWidth" height="@p.ImageHeight">
+                        <div class="cpu-text">@p.Name</div>
+                    </div>
+                    <div>@p.Socket</div>
+                    <div>@p.FormFactor</div>
+                    <div>@p.MaxMemory GB</div>
+                    <div>@p.MemorySlots</div>
+                    <div>@p.Color</div>
+                    <div>$@p.Price</div>
+                </div>
+                }
+            }
+            <div class="cpu-card">
+                <div id="text-image">
+                    <img src="/img/buildPC/modelblock-gaming-pd 1.png" alt="image of a motherboard" width="115px"
+                        height="145px">
+                    <div class="cpu-text">MSI B650 GAMING PLUS WIFI</div>
+                </div>
+                <div>AM5</div>
+                <div>ATX</div>
+                <div>192 GB</div>
+                <div>4</div>
+                <div>Black</div>
+                <div>$159.99</div>
+            </div>
+        </div>
+    }
+    else if (Model.LinkName == "RAM")
+    {
+        <div class="large-text">Choose your memory</div>
+        <div class="pc-headers">
+            <div class="table-header">
+                Name
+            </div>
+            <div class="table-header">
+                Speed
+            </div>
+            <div class="table-header">
+                Modules
+            </div>
+            <div class="table-header">
+                Color
+            </div>
+            <div class="table-header">
+                First Word Latency
+            </div>
+            <div class="table-header">
+                CAS Latency
+            </div>
+            <div class="table-header" style="font-weight: bolder">
+                Final price
+            </div>
+        </div>
+        <div class="cpu-card-list">
+            @foreach (var s in Model.Items)
+            {
+                var p = s as Models.RAM;
+                if (string.IsNullOrEmpty(p.Description))
+                {
+                    <div class="cpu-card" onclick="RegisterValue(@p.ID, '@nameof(Models.RAM)')">
+                        <div id="text-image">
+                        <img src="/@p.ImageLink" alt="image of a RAM memory unit" width="@p.ImageWidth" height="@p.ImageHeight">
+                        <div class="cpu-text">@p.Name</div>
+                    </div>
+                    <div>@p.Speed</div>
+                    <div>@p.Modules</div>
+                    <div>@p.Color</div>
+                    <div>@p.FirstWordLatency ns</div>
+                    <div>@p.CASLatency</div>
+                    <div>$@p.Price</div>
+                </div>
+                }
+            }
+        </div>
+    }
+    else if (Model.LinkName == "SSD")
+    {
+        <div class="large-text">Choose your storage unit</div>
+        <div class="pc-headers">
+            <div class="table-header">
+                Name
+            </div>
+            <div class="table-header">
+                Capacity
+            </div>
+            <div class="table-header">
+                Type
+            </div>
+            <div class="table-header">
+                Cache
+            </div>
+            <div class="table-header">
+                Form Factor
+            </div>
+            <div class="table-header">
+                Interface
+            </div>
+            <div class="table-header" style="font-weight: bolder">
+                Price
+            </div>
+        </div>
+        <div class="cpu-card-list">
+            @foreach (var s in Model.Items)
+            {
+                var p = s as Models.SSD;
+                if(string.IsNullOrEmpty(p.Description))
+                {
+                <div class="cpu-card" onclick="RegisterValue(@p.ID, '@nameof(Models.SSD)')">
+                    <div id="text-image">
+                        <img src="/@p.ImageLink" alt="image of a storage unit" width="@p.ImageWidth" height="@p.ImageHeight">
+                        <div class="cpu-text">@p.Name</div>
+                    </div>
+                    <div>@p.Capacity TB</div>
+                    <div>@p.Type</div>
+                    @if (@p.Cache == 0)
+                    {
+                        <div>-</div>
+                    }
+                    else
+                    {
+                        <div>@p.Cache MB</div>
+                    }
+                    <div>@p.FormFactor</div>
+                    <div>@p.Interface</div>
+                    <div>$@p.Price</div>
+                </div>
+                }
+            }
+        </div>
+    }
+    else if (Model.LinkName == "VideoCard")
+    {
+        <div class="large-text">Choose your video card</div>
+        <div class="pc-headers">
+            <div class="table-header">
+                Name
+            </div>
+            <div class="table-header">
+                Chipset
+            </div>
+            <div class="table-header">
+                Memory
+            </div>
+            <div class="table-header">
+                Core Clock
+            </div>
+            <div class="table-header">
+                Boost Clock
+            </div>
+            <div class="table-header">
+                Color
+            </div>
+            <div class="table-header" style="font-weight: bolder">
+                Price
+            </div>
+        </div>
+        <div class="cpu-card-list">
+            @foreach (var s in Model.Items)
+            {
+                var p = s as Models.VideoCard;
+                if (string.IsNullOrEmpty(p.Description))
+                {
+                    <div class="cpu-card" onclick="RegisterValue(@p.ID, '@nameof(Models.VideoCard)')">
+                        <div id="text-image">
+                        <img src="/@p.ImageLink" alt="image of a storage unit" width="@p.ImageWidth" height="@p.ImageHeight">
+                        <div class="cpu-text">@p.Name</div>
+                    </div>
+                    <div>@p.Chipset</div>
+                    <div>@p.Memory GB</div>
+                    <div>@p.CoreClock MHz</div>
+                    <div>@p.BoostClock MHz</div>
+                    <div>@p.Color</div>
+                    <div>$@p.Price</div>
+                </div>
+                }
+            }
+        </div>
+    }
+    else if (Model.LinkName == "Power")
+    {
+        <div class="large-text">Choose your power supply unit</div>
+        <div class="pc-headers">
+            <div class="table-header">
+                Name
+            </div>
+            <div class="table-header">
+                Type
+            </div>
+            <div class="table-header">
+                Efficiency Rating
+            </div>
+            <div class="table-header">
+                Wattage
+            </div>
+            <div class="table-header">
+                Modular
+            </div>
+            <div class="table-header">
+                Color
+            </div>
+            <div class="table-header" style="font-weight: bolder">
+                Price
+            </div>
+        </div>
+        <div class="cpu-card-list">
+            @foreach (var s in Model.Items)
+            {
+                var p = s as Models.Power;
+                if(string.IsNullOrEmpty(p.Description))
+                {
+                <div class="cpu-card" onclick="RegisterValue(@p.ID, '@nameof(Models.Power)')">
+                    <div id="text-image">
+                        <img src="/@p.ImageLink" alt="image of a power supply unit" width="@p.ImageWidth"
+                            height="@p.ImageHeight">
+                        <div class="cpu-text">@p.Name</div>
+                    </div>
+                    <div>@p.Type</div>
+                    <div>@p.EfficiencyRating</div>
+                    <div>@p.Wattage W</div>
+                    @if (@p.Modular == true)
+                    {
+                        <div>Full</div>
+                    }
+                    else
+                    {
+                        <div>No</div>
+                    }
+                    <div>@p.Color</div>
+                    <div>$@p.Price</div>
+                </div>
+                }
+
+            }
+        </div>
+    }
+    <button type="submit" style="visibility: hidden;"></button>
+</form>
